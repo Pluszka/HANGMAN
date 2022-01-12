@@ -67,6 +67,8 @@ mistakes=0
 maxmistakes=len(stages)
 print(guessed)
 
+print('Welcom to the Hangman the game.\nHave fun!')
+
 while not (win or lose):
   answer=input('Guess a letter: ').lower()
   changes=0
@@ -86,3 +88,7 @@ while not (win or lose):
     win=True
   if mistakes==maxmistakes:
     lose=True
+if win==True:
+  print('Congratulations, you won a game!')
+  else:
+    print('Maybe next time.')
