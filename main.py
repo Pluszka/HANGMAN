@@ -5,13 +5,14 @@ import hangman_words
 stages = hangman_art.stages
 word_list = hangman_words.word_list
 clue=random.choice(word_list)
-guessed=['_'for x in clue]
 theend=False
 win=False
 lose=False
 mistakes=0
-maxmistakes=len(stages)
 tested_letters=[]
+
+maxmistakes=len(stages)
+guessed=['_'for x in clue]
 
 print(hangman_art.logo, '\nWelcome to the Hangman The Game.\nHave fun!')
 print(guessed)
